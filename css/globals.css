@@ -22,3 +22,17 @@ Header styles start
 nav{
 
 }
+ul{
+    
+}
+ol{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    margin-left: 50px;
+    word-spacing: 10px;
+}
+.rectangle{
+    height: 35px;
+    width: 100%;
+    background-color: gray;
+}
