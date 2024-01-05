@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+/*------------- 
+css resets 
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family =Fira+Code:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -7,37 +10,107 @@
     font-family: 'Fira Code', monospace;
 }
 
+body{
+    background-color: var(--bg-100);
+    color: var(--text-100);
+}
+
+main{
+    padding: 0 6rem;
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color: var(--text-100);
 }
 
 input:focus{
     outline: none;
 }
 
+/*------------- 
+css variables 
+-------------*/
+:root{
+    --primary-100:#2C3E50;
+    --primary-200:#57687c;
+    --primary-300:#b4c7dd;
+    --accent-100:#F7CAC9;
+    --accent-200:#926b6a;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#F2F2F2;
+    --bg-200:#e8e8e8;
+    --bg-300:#bfbfbf;
+}
+
 /*-------------------
 Header styles start
 -------------------*/
-nav{
-
-}
-ul{
-    
-}
-ul{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px;
-    margin-left: 50px;
-    word-spacing: 25px;
-}
-.rectangle{
-    height: 50px;
+.nav{
+    box-shadow: 0px 0px 15px var(--primary-100);
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: gray;
+    background-color: var(--bg-100);
 }
-div {
-    background-color: gray;
-    border: 1px solid black;
-    padding: 15px;
-  }
+
+.nav .nav__container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav .nav__container ul{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+.nav .nav__container ul li{
+    list-style-type: none;
+}
+
+.nav ul li a.nav__active{
+    color: var(--primary-100);
+}
+
+.nav .nav__cta{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.nav .nav__cta .nav__dark-mode i{
+    font-size: 1.55rem;
+    cursor: pointer;
+}
+
+/*-------------------
+Reusable css
+-------------------*/
+.btn {
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    background-color: var(--accent-100);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-100);
+}
+
+.btn:hover{
+    background-color: var(--accent-200);
+}
+
+.btn:active{
+    transform: scale(1.025);
+}

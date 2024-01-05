@@ -1,9 +1,40 @@
 /*-------------------
 Home styles start
 -------------------*/
-#home{
-
+.hero{
 }
+
+.hero .hero__desc{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.hero__desc h1{
+    font-size: 2.5rem;
+}
+
+.hero__desc p{
+    font-size: 1.25rem;
+    margin: .25rem 0;
+}
+
+.hero__desc button{
+}
+
+.hero .hero__background{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hero__background img{
+    width: 100%;
+    height: 100vh;
+}
+
 
 /*----------------------------
 Popular Products styles start

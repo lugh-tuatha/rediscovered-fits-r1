@@ -12,24 +12,33 @@
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/categories.css">
 </head>
 <body>
-    <nav>
-        <!-- insert header here -->
-        <div class="rectangle">
-            <ul><li>STREETWEARCO.
-                <a href="index.html">Home</a>
-                 <a href="categories.html">Categories</a>
-                 <a href="collection.html">Collection</a>
-                 <a href="store.html">Store</a>
-                 <a href="blog.html">Blog</a>
-                 <a href="Faq's.html">Faq's</a>
-            </li></ul>
-            </ul> </a></div>
+    <nav class="nav">
+        <div class="nav__container">
+            <h1>Brand Name</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html" class="nav__active" >Categories</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Faq's</a></li>
+            </ul>
+
+            <div class="nav__cta">
+                <div class="nav__dark-mode">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
     </nav>
 
-    <main>
+    <main class="categories">
         <h1>Categories</h1>
         <p>We have the 3 Most Influential Local Brands
              just for you and your Everyday Outfit </p>
@@ -129,7 +138,6 @@
             </tr>
         </table>   
     </main>
-
 
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -1,6 +1,5 @@
-h1{
+.categories h1{
     font-size: 55px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 60px;
     margin-top: 20px;
 }
@@ -8,7 +7,6 @@ p{
     width: 35%;
     margin-left: 65px;
     margin-top: 10px;
-    font-family: cursive;
 }
 h3{
     margin-left: 43%;
@@ -17,7 +15,6 @@ h3{
 h4{
     float: left;
     margin-left: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h5{
     margin-left: 40%;
@@ -28,17 +25,14 @@ h6{
     float: left;
     margin-left: 50px;
     font-size: 13px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h7{
     float: left;
     margin-left: 50px;
     font-size: 15px;
-    font-family: cursive;
 }
 h8{
     float: right;
     margin-right: 10px;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
