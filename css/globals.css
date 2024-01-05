@@ -25,14 +25,19 @@ nav{
 ul{
     
 }
-ol{
+ul{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
     margin-left: 50px;
-    word-spacing: 10px;
+    word-spacing: 25px;
 }
 .rectangle{
-    height: 35px;
+    height: 50px;
     width: 100%;
     background-color: gray;
 }
+div {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 15px;
+  }
