@@ -39,11 +39,110 @@ Home styles start
 /*----------------------------
 Popular Products styles start
 ----------------------------*/
-.popular-products{
-
+.popular{
+    margin-top: 3rem;
 }
 
-.popular-products .card{
-
+.popular__card{
+    margin-top: .75rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
+.popular__card .card img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card__content{
+    position: relative;
+}
+
+.card__content .card__badge{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+}
+
+.card__footer h2{
+    font-weight: 300;
+    font-size: .85rem;
+}
+
+.card__footer h1{
+    font-size: 1.115rem;
+    margin-top: .25rem;
+}
+
+/*----------------------------
+Popular Products styles start
+----------------------------*/
+.shop{
+    margin-top: 3rem;
+}
+
+.shop .shop__desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.shop .shop__desc h1{
+    font-size: 3rem;
+}
+
+.shop .shop__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+.shop__item .banner{
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+.shop__item .shop__banner-1,
+.shop__item .shop__banner-2{
+    background-size: cover;
+}
+
+.shop__item .shop__banner-1{
+    background-image: url('../assets/img/banner/shop-banner1.jpg');
+}
+
+.shop__item .shop__banner-2{
+    background-image: url('../assets/img/banner/shop-banner2.jpg');
+}
+
+.shop__item .banner img{
+    width: 100%;
+    gap: 2rem;
+}
+
+
+.shop__item .banner__offset{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, .76);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 1rem;
+}
+
+.banner__offset h1{
+    margin: 0 0 .25rem 1rem;
+    font-size: 2rem;
+    text-wrap: balance;
+    color: #fff;
+}
+
+.shop .shop__cta{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
