@@ -143,3 +143,136 @@ Popular Products styles start
     justify-content: center;
     margin-top: 1.5rem;
 }
+
+/*----------------------------
+Marquee style start
+----------------------------*/
+.brands{
+    margin-top: 3rem;
+}
+
+.brands h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/*----------------------------
+Store page styles start
+----------------------------*/
+.store{
+    margin-top: 6.5rem;
+}
+
+.store .search{
+    position: relative;
+    display: inline-block;
+    font-size: .85rem;
+
+}
+
+.store .search input{
+    background-color: var(--bg-200);
+    border: none;
+    appearance: none;
+    padding: 1rem 1.5rem 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+}
+
+.store .search i{
+    position: absolute;
+    top: 50%;
+    left: 1rem; 
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 1.25rem;
+}
+
+.store .feature{
+    background-color: var(--primary-300);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store .feature h1{
+    width: 50%;
+    text-wrap: balance;
+    margin-bottom: 1rem;
+}
+
+.feature__hero{
+    position: relative;
+    display: inline-block;
+    width: 11.5rem;
+
+}
+
+.feature__hero img{
+    width: 100%;
+    position: absolute;
+    bottom: -2.5rem;
+}
+
+.tabs{
+    display: flex;
+    gap: 1rem;
+}
+
+.tabs__items{
+    background-color: var(--bg-200);
+    padding: .75rem 1.25rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.tabs__items h1{
+    font-size: .85rem;
+    font-weight: 200;
+}
+
+.tabs .sort{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.tabs .sort i{
+    font-size: .85rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.products .card__thumb{
+    background-color: var(--bg-200);
+    border-radius: 1rem;
+}
+
+.products .card__thumb img{
+    width: 100%;
+}
+
+.products .card__footer{
+    text-align: center;
+}
+
+.products .card__footer h1{
+    font-size: .90rem;
+    font-weight: 200;
+    margin-top: .5rem;
+}
+
+.products .card__footer p{
+    font-size: .90rem;
+    font-weight: 200;
+}
