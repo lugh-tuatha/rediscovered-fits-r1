@@ -155,11 +155,15 @@ Marquee style start
     font-size: 1.5rem;
     text-align: center;
 }
-marquee{
-    background-color: white;
+
+marquee .marquee__item{
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
     width: 100%;
     height: 60px;
 }
+
 .brands img{
     height: 50px;
 }
