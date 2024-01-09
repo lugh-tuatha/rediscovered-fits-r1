@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND NAME</title>
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/team.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <h1>Brand Name</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html" class="nav__active" >Categories</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Faq's</a></li>
+            </ul>
+
+            <div class="nav__cta">
+                <div class="nav__dark-mode">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="team__banner">
+        <div>
+            <h1> Meet the Team Behind the Magic!</h1>
+            <p>From designers to developers, we bring diverse skills and creativity to the table</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="team">
+            <div class="team__card">
+                <div class="team__profile">
+                    <img src="assets/img/teams/ace.jfif" alt="">
+                </div>
+                <div class="team__info">
+                    <ul>
+                        <li>Ace Gabriel P. Pasiliao</li>
+                        <li>09917897907</li>
+                        <li>acegabriel0710@gmail.com</li>
+                        <li class="socials">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li>Team Lead | Developer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="team__card">
+                <div class="team__profile">
+                    <img src="assets/img/teams/default.webp" alt="">
+                </div>
+                <div class="team__info">
+                    <ul>
+                        <li>KC Zaragosa</li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            --
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            kc@example.com
+                        </li>
+                        <li class="socials">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li>Developer | Copywriter</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1100
+        });
+    </script>
+</body>
+</html>
