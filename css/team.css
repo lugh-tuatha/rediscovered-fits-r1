@@ -1,0 +1,78 @@
+.team__banner{
+    margin-top: 2rem;
+    width: 100%;
+    height: 25rem;
+    background: url('../assets/img/banner/team-banner.jpg');
+    background-size: cover;
+
+    display: flex;
+    align-items: end;
+    padding: 0 0 1rem 1rem;
+    color: #fff;
+}
+
+.team__banner h1{
+    font-size: 5rem;
+}
+
+.team__banner p{
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.team .team__card{
+    margin-top: 5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px var(--primary-100);
+    border-radius: .25rem;
+}
+
+.team__card .team__profile{
+    position: relative;
+    display: inline-block;
+}
+
+.team__card .team__profile img{
+    width: 7rem;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: -5rem;
+}
+
+.team__card .team__info ul{
+    margin-top: 2.5rem;
+}
+
+.team__card .team__info ul li{
+    list-style-type: none;
+}
+
+.team__card .team__info ul li:first-child{
+    color: var(--primary-100);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.team__card .team__info ul li:nth-child(2){
+    margin: .25rem 0;
+}
+
+.team__card .team__info ul .socials{
+    margin: .5rem 0;
+    font-size: 1.25rem;
+    color: var(--primary-200);
+}
+
+.team__card .team__info ul li:last-child{
+    font-weight: 200;
+    font-size: .85rem;
+    text-align: end;
+    color: var(--primary-100);
+}
