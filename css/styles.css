@@ -180,7 +180,7 @@ Store page styles start
     position: relative;
     display: inline-block;
     font-size: .85rem;
-
+    appearance: none;
 }
 
 .store .search input{
@@ -265,6 +265,12 @@ Store page styles start
     margin-top: 1rem;
 }
 
+.products .products__card{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .products .card__thumb{
     background-color: var(--bg-200);
     border-radius: 1rem;
@@ -287,4 +293,22 @@ Store page styles start
 .products .card__footer p{
     font-size: .90rem;
     font-weight: 200;
+}
+
+.products__card .quick-view{
+    background-color: black;
+    border: none;
+    color: #fff;
+    padding: 1rem 1.25rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.products__card:hover .quick-view{
+    opacity: 1;
 }
