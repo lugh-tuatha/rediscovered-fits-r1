@@ -4,7 +4,7 @@
     margin-left: 60px;
     margin-top: 20px;
 }
-p{
+.categories p{
     width: 35%;
     margin-left: 65px;
     margin-top: 10px;
@@ -15,7 +15,6 @@ h3{
 }
 h4{
     float: left;
-    margin-left: 50px;
 }
 h5{
     margin-left: 40%;
@@ -24,12 +23,10 @@ h5{
 }
 h6{
     float: left;
-    margin-left: 50px;
     font-size: 13px;
 }
 h7{
     float: left;
-    margin-left: 50px;
     font-size: 15px;
 }
 h8{
@@ -39,10 +36,6 @@ h8{
 }
 
 table{
-    width: 100%;
-}
-
-th td{
     width: 100%;
 }
 
