@@ -48,6 +48,10 @@
 
 .team__card .team__info ul{
     margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
 }
 
 .team__card .team__info ul li{
@@ -60,12 +64,7 @@
     font-size: 1.5rem;
 }
 
-.team__card .team__info ul li:nth-child(2){
-    margin: .25rem 0;
-}
-
-.team__card .team__info ul .socials{
-    margin: .5rem 0;
+.team__card .team__info ul .socials a{
     font-size: 1.25rem;
     color: var(--primary-200);
 }

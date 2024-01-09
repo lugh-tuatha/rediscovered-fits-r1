@@ -1,12 +1,12 @@
+.categories{
+    margin-top: 6.5rem;
+}
 
 .categories h1{
     font-size: 55px;
-    margin-left: 60px;
     margin-top: 20px;
 }
 .categories p{
-    width: 35%;
-    margin-left: 65px;
     margin-top: 10px;
 }
 h3{

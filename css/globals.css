@@ -131,6 +131,15 @@ footer .copyright{
     opacity: .5;
 }
 
+footer .copyright a{
+    color: var(--primary-100);
+    font-weight: 700;
+}
+
+footer .copyright a:hover{
+    text-decoration: underline;
+}
+
 /*-------------------
 Reusable css
 -------------------*/
