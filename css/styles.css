@@ -168,7 +168,6 @@ marquee .marquee__item{
     height: 50px;
 }
 
-
 /*----------------------------
 Store page styles start
 ----------------------------*/
@@ -311,4 +310,98 @@ Store page styles start
 
 .products__card:hover .quick-view{
     opacity: 1;
+}
+
+.store .dialog{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    background-color: var(--bg-300);
+    border: 1px solid var(--primary-100);
+    outline: none;
+    padding: 1rem;
+}
+
+.dialog .dialog__container{
+    display: flex;
+    align-items: center;
+}
+
+.dialog__container .dialog__details{
+    width: 25rem;
+}
+
+.dialog__details h1{
+    text-wrap: balance;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.dialog__details p{
+    margin-bottom: 2rem;
+}
+
+.dialog__details select{
+    margin: .25rem 0 2rem 0;
+    padding: .5rem;
+    outline: none;
+    border: 1px solid var(--primary-100);
+    background-color: transparent;
+    display: block;
+}
+
+.dialog__details .close{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+
+/*----------------------------
+Faq's page styles start
+----------------------------*/
+.faqs{
+    margin-top: 6.5rem;
+}
+
+.faqs .accordion{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-300);
+    position: relative;
+}
+
+.accordion input{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.accordion .accordion__question{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion .accordion__answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion input:checked ~ .accordion__answer{
+    max-height: 10rem;
+    margin-top: 1rem;
+    color: var(--primary-200);
+    transition: max-height 0.3s ease;
+}
+
+
+.faqs-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

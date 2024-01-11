@@ -13,7 +13,7 @@
     <!-- CSS links -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/media-query.css">
-    <link rel="stylesheet" href="css/faqs.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav class="nav">
@@ -36,14 +36,41 @@
                     <i class="fa-solid fa-cart-arrow-down"></i>
                 </div>
                 
-                <button class="btn">Shop Now</button>
+                <a href="store.html">
+    <button class="btn">Shop Now</button>
+</a>
             </div>
         </div>
     </nav>
 
 
     <main class="faqs">
-        <section></section>
+        <h1>Faq's</h1>
+        <section>
+            <div class="accordion">
+                <input type="checkbox">
+                <div class="accordion__question">
+                    Q1: How much is the shipping fee?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="accordion__answer">
+                    The shipping fee will depend on your quantity of your order(s) and its weight. The starting price of the shipping fee will be 169PHP and will increase depending on the weight of your item(s) and location.  
+                </div>
+            </div>
+
+            <div class="accordion">
+                <input type="checkbox">
+                <div class="accordion__question">
+                    Q2: What is your Return & Exchange Policy?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="accordion__answer">
+                    Generally, only defective items or wrong order/s sent by our staff may be exchanged. But reasonable cases like wrong sizing can be an exception to the rule. You can find the detailed Return/Exchange policy 
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="faqs-footer">
