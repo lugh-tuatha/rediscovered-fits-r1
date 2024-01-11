@@ -36,8 +36,8 @@
                     <i class="fa-solid fa-cart-arrow-down"></i>
                 </div>
                 <a href="store.html">
-    <button class="btn">Shop Now</button>
-</a>
+                    <button class="btn">Shop Now</button>
+                </a>
             </div>
         </div>
     </nav>
@@ -85,28 +85,31 @@
                     <h1>GNARLY BUTTER DAD</h1>
                     <p>₱ 800</p>
                 </div>
-                <button class="quick-view">QUICK VIEW</button>
+                <button class="quick-view" onclick="butterDad.showModal()">QUICK VIEW</button>
             </div>
+
             <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
-                    <img src="assets/img/store/und/dice-mono.webp" alt="shop items 1">
+                    <img src="assets/img/store/und/dice-mono.png" alt="shop items 1">
                 </div>
                 <div class="card__footer">
                     <h1>UND DIME MONO MESH SHORTS</h1>
                     <p>₱ 900</p>
                 </div>
-                <button class="quick-view">QUICK VIEW</button>
+                <button class="quick-view" onclick="diceMono.showModal()">QUICK VIEW</button>
             </div>
+
             <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
-                    <img src="assets/img/store/dbtk/sudio-tee.webp" alt="shop items 1">
+                    <img src="assets/img/store/dbtk/studio-tee.png" alt="shop items 1">
                 </div>
                 <div class="card__footer">
                     <h1>DBTK STUDIO TEE - BLACK</h1>
                     <p>₱ 650</p>
                 </div>
-                <button class="quick-view">QUICK VIEW</button>
+                <button class="quick-view" onclick="studioTee.showModal()">QUICK VIEW</button>
             </div>
+
             <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
                     <img src="assets/img/store/dbtk/slantastro.png" alt="shop items 1">
@@ -120,6 +123,58 @@
         </div>
 
         <!-- item dialog start -->
+        <dialog id="butterDad" class="dialog">
+            <div class="dialog__container">
+                <img src="assets/img/store/gnarly/butter-dad.png" alt="">
+                <div class="dialog__details">
+                    <h1>BUTTER DAD</h1>
+                    <p>₱ 800</p>
+                    <button onclick="butterDad.close()" autofocus class="btn-solid">Add To Cart</button>
+                    <button onclick="butterDad.close()" autofocus class="btn-solid close">Close</button>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="diceMono" class="dialog">
+            <div class="dialog__container">
+                <img src="assets/img/store/und/dice-mono.png" alt="">
+                <div class="dialog__details">
+                    <h1>DIME MONO MESH SHORTS</h1>
+                    <p>₱ 900</p>
+                    <label for="size">size:</label>
+                    <select name="size">
+                        <option value="small">SMALL</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="large">LARGE</option>
+                        <option value="x-large">X-LARGE</option>
+                        <option value="xx-large">XX-LARGE</option>
+                    </select>
+                    <button onclick="diceMono.close()" autofocus class="btn-solid">Add To Cart</button>
+                    <button onclick="diceMono.close()" autofocus class="btn-solid close">Close</button>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="studioTee" class="dialog">
+            <div class="dialog__container">
+                <img src="assets/img/store/dbtk/studio-tee.png" alt="">
+                <div class="dialog__details">
+                    <h1>STUDIO TEE - BLACK</h1>
+                    <p>₱ 1,100</p>
+                    <label for="size">size:</label>
+                    <select name="size">
+                        <option value="small">SMALL</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="large">LARGE</option>
+                        <option value="x-large">X-LARGE</option>
+                        <option value="xx-large">XX-LARGE</option>
+                    </select>
+                    <button onclick="studioTee.close()" autofocus class="btn-solid">Add To Cart</button>
+                    <button onclick="studioTee.close()" autofocus class="btn-solid close">Close</button>
+                </div>
+            </div>
+        </dialog>
+
         <dialog id="slantAstrology" class="dialog">
             <div class="dialog__container">
                 <img src="assets/img/store/dbtk/slantastro.png" alt="">

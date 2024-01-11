@@ -37,3 +37,9 @@
 .blogs th, td{
     width: 25%;
 }
+
+.blogs-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
