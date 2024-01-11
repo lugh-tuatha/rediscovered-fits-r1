@@ -23,7 +23,7 @@
 .team{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    column-gap: 2rem;
 }
 
 .team .team__card{
@@ -31,6 +31,7 @@
     padding: 1rem;
     box-shadow: 0 0 10px var(--primary-100);
     border-radius: .25rem;
+    border: 1px solid var(--primary-200);
 }
 
 .team__card .team__profile{
@@ -44,6 +45,7 @@
     border-radius: 100%;
     position: absolute;
     top: -5rem;
+    border: 2px solid var(--primary-200);
 }
 
 .team__card .team__info ul{
