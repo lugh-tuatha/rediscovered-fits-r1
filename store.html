@@ -35,7 +35,9 @@
                     <i class="fa-regular fa-user"></i>
                     <i class="fa-solid fa-cart-arrow-down"></i>
                 </div>
-                <button class="btn">Shop Now</button>
+                <a href="store.html">
+    <button class="btn">Shop Now</button>
+</a>
             </div>
         </div>
     </nav>
@@ -75,51 +77,69 @@
         </div>
 
         <div class="products">
-            <div class="products__card">
+            <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
-                    <img src="assets/img/store/dbtk/slantastro.png" alt="shop items 1">
+                    <img src="assets/img/store/gnarly/butter-dad.png" alt="shop items 1">
                 </div>
                 <div class="card__footer">
-                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
-                    <p>₱ 1,000</p>
+                    <h1>GNARLY BUTTER DAD</h1>
+                    <p>₱ 800</p>
                 </div>
                 <button class="quick-view">QUICK VIEW</button>
             </div>
-            <div class="products__card">
+            <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
-                    <img src="assets/img/store/dbtk/slantastro.png" alt="shop items 1">
+                    <img src="assets/img/store/und/dice-mono.webp" alt="shop items 1">
                 </div>
                 <div class="card__footer">
-                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
-                    <p>₱ 1,000</p>
+                    <h1>UND DIME MONO MESH SHORTS</h1>
+                    <p>₱ 900</p>
                 </div>
                 <button class="quick-view">QUICK VIEW</button>
             </div>
-            <div class="products__card">
+            <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
-                    <img src="assets/img/store/dbtk/slantastro.png" alt="shop items 1">
+                    <img src="assets/img/store/dbtk/sudio-tee.webp" alt="shop items 1">
                 </div>
                 <div class="card__footer">
-                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
-                    <p>₱ 1,000</p>
+                    <h1>DBTK STUDIO TEE - BLACK</h1>
+                    <p>₱ 650</p>
                 </div>
                 <button class="quick-view">QUICK VIEW</button>
             </div>
-            <div class="products__card">
+            <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
                     <img src="assets/img/store/dbtk/slantastro.png" alt="shop items 1">
                 </div>
                 <div class="card__footer">
-                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
-                    <p>₱ 1,000</p>
+                    <h1>DBTK SLANT ASTROLOGY TEE - BLACK</h1>
+                    <p>₱ 1,100</p>
                 </div>
-                <button class="quick-view">QUICK VIEW</button>
+                <button class="quick-view" onclick="slantAstrology.showModal()">QUICK VIEW</button>
             </div>
         </div>
 
-        <dialog>
-            
+        <!-- item dialog start -->
+        <dialog id="slantAstrology" class="dialog">
+            <div class="dialog__container">
+                <img src="assets/img/store/dbtk/slantastro.png" alt="">
+                <div class="dialog__details">
+                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
+                    <p>₱ 1,100</p>
+                    <label for="size">size:</label>
+                    <select name="size">
+                        <option value="small">SMALL</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="large">LARGE</option>
+                        <option value="x-large">X-LARGE</option>
+                        <option value="xx-large">XX-LARGE</option>
+                    </select>
+                    <button onclick="slantAstrology.close()" autofocus class="btn-solid">Add To Cart</button>
+                    <button onclick="slantAstrology.close()" autofocus class="btn-solid close">Close</button>
+                </div>
+            </div>
         </dialog>
+        <!-- item dialog end -->
     </main>
 
     <footer>
