@@ -351,18 +351,46 @@ Store page styles start
     display: block;
 }
 
-.dialog__details .close{
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
+.cart{
+    background-color: var(--bg-200);
+    height: 100vh;
+    width: 100%;
+    max-width: 25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 2rem;
+    border: 2px solid var(--bg-300);
 }
 
+.cart__container .cart__header{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__container .cart__header h1{
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.cart__container .cart__header i{
+    cursor: pointer;
+}
+
+/* kc style here */
+
+.cart__container{
+    
+}
 
 /*----------------------------
 Faq's page styles start
 ----------------------------*/
 .faqs{
-    margin-top: 6.5rem;
+    margin-top: 6rem;
 }
 
 .faqs .accordion{

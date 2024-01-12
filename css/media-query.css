@@ -4,3 +4,16 @@
         padding:.5rem 1.25rem;
     }
 }
+
+@media (max-width: 375px){
+    /* if max-width is equal to 375px do this  */
+    .products{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

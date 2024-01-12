@@ -12,8 +12,8 @@
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <nav class="nav">
@@ -33,7 +33,6 @@
             <div class="nav__cta">
                 <div class="nav__dark-mode">
                     <i class="fa-regular fa-user"></i>
-                    <i class="fa-solid fa-cart-arrow-down"></i>
                 </div>
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
@@ -76,6 +75,7 @@
             </div>
         </div>
 
+        <!-- all products starts here -->
         <div class="products">
             <div class="products__card" data-aos="zoom-in">
                 <div class="card__thumb">
@@ -121,6 +121,7 @@
                 <button class="quick-view" onclick="slantAstrology.showModal()">QUICK VIEW</button>
             </div>
         </div>
+        <!-- all products ends here -->
 
         <!-- item dialog start -->
         <dialog id="butterDad" class="dialog">
@@ -189,12 +190,24 @@
                         <option value="x-large">X-LARGE</option>
                         <option value="xx-large">XX-LARGE</option>
                     </select>
-                    <button onclick="slantAstrology.close()" autofocus class="btn-solid">Add To Cart</button>
+                    <button autofocus onclick="cart.show(); slantAstrology.close()" class="btn-solid add-to-cart">Add To Cart</button>
                     <button onclick="slantAstrology.close()" autofocus class="btn-solid close">Close</button>
                 </div>
             </div>
         </dialog>
         <!-- item dialog end -->
+
+        <!-- cart start -->
+        <dialog class="cart" id="cart">
+            <div class="cart__container">
+                <div class="cart__header">
+                    <h1>Your Cart</h1>
+                    <i onclick="cart.close()" class="fa-solid fa-x"></i>
+                </div>
+                <hr>
+            </div>
+        </dialog>
+        <!-- cart ends -->
     </main>
 
     <footer>
