@@ -369,6 +369,7 @@ Store page styles start
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .cart__container .cart__header h1{
@@ -382,8 +383,19 @@ Store page styles start
 
 /* kc style here */
 
-.cart__container{
-    
+.cart__container img{
+    width: 150px;
+}
+.gnarly{
+    float: right;
+    margin-top: 50px;
+}
+.number{
+    float: right;
+    margin-top: 80px;
+}
+.price{
+    float: right;
 }
 
 /*----------------------------
