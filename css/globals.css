@@ -32,6 +32,20 @@ input:focus{
     outline: none;
 }
 
+::-webkit-scrollbar-track {
+    background: #7c0c0c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /*------------- 
 css variables 
 -------------*/

@@ -47,19 +47,6 @@ Popular Products styles start
     gap: 2rem;
 }
 
-.popular__card:nth-child(2){
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.popular__card .card:hover .popular__card:nth-child(2){
-    opacity: 1;
-}
-
 .popular__card .card img{
     width: 100%;
     border-radius: .5rem;
@@ -71,6 +58,33 @@ Popular Products styles start
     background-color: var(--bg-200);
     border-radius: .5rem;
     margin-bottom: .5rem;
+}
+
+.card__content .back-tshirt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease .2s;
+}
+
+/* show back img when card is hovered */
+.popular__card .card:nth-child(1):hover .back-tshirt {
+    opacity: 1;
+}
+
+.popular__card .card:nth-child(2):hover .back-tshirt {
+    opacity: 1;
+}
+
+.popular__card .card:nth-child(3):hover .back-tshirt {
+    opacity: 1;
+}
+
+.popular__card .card:nth-child(4):hover .back-tshirt {
+    opacity: 1;
 }
 
 .card__content .card__badge{
@@ -245,6 +259,14 @@ Store page styles start
 
 .tabs{
     display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tabs .extra,
+.tabs .item-container{
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -259,6 +281,19 @@ Store page styles start
     font-size: .85rem;
     font-weight: 200;
 }
+
+.tabs .your-cart{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: transparent;
+}
+
+.tabs .your-cart i{
+    color: var(--accent-200);
+    font-size: 1.25rem;
+}
+
 
 .tabs .sort{
     display: flex;
