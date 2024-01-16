@@ -13,8 +13,8 @@
 
     <!-- CSS links -->
     <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <nav class="nav">
@@ -25,6 +25,7 @@
             </a>
             <ul>
                 <li><a href="index.html" class="nav__active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -32,14 +33,38 @@
             </ul>
 
             <div class="nav__cta">
-                <div class="nav__dark-mode">
+                <div class="nav__user">
                     <i class="fa-regular fa-user"></i>
                 </div>
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
                 </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
+
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+        </dialog>
     </nav>
 
     <div class="hero">
@@ -68,7 +93,7 @@
             <div class="popular__card">
                 <div class="card" data-aos="zoom-in">
                     <div class="card__content">
-                        <img src="assets/img/brands/hghmnds/gas-shack-polo.webp" alt="popular tees 1">
+                        <img src="HGHMNDS/GAS SHACK POLO.png" alt="popular tees 1">
                     </div>
                     <div class="card__footer">
                         <h2>HGHMNDS</h2>
@@ -140,8 +165,8 @@
             
             <div class="shop__cta">
                 <a href="store.html">
-    <button class="btn">Shop Now</button>
-</a>
+                <button class="btn">Shop Now</button>
+            </a>
                 <button class="btn">Explore Collections</button>
             </div>
         </section>
@@ -169,6 +194,7 @@
 
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="blog.html" class="nav__active">Blog</a></li>

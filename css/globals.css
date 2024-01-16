@@ -61,7 +61,6 @@ Header styles start
 }
 
 .nav .nav__container {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,11 +105,29 @@ Header styles start
     gap: .75rem;
 }
 
-.nav .nav__cta .nav__dark-mode i{
+.nav .nav__cta .nav__user i{
     font-size: 1.55rem;
     cursor: pointer;
 }
 
+.nav .nav__cta .menu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav .nav__mobile{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    border: 0;
+    z-index: 10;
+}
+
+.nav .nav__mobile i{
+    padding: 0 2px;
+
+}
 /*-------------------
 Footer styles start
 -------------------*/
