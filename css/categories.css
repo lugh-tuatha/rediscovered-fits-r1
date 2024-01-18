@@ -1,45 +1,58 @@
-.categories{
-    margin-top: 6.5rem;
+.categories__hero{
+    height: 100vh;
+    padding-top: 6.5rem;
+    position: relative;
 }
 
-.categories h1{
-    font-size: 55px;
-    margin-top: 20px;
-}
-.categories p{
-    margin-top: 10px;
-}
-h3{
-    margin-left: 43%;
-    margin-top: 15px;
-}
-h4{
-    float: left;
-}
-h5{
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 30px;
-}
-h6{
-    float: left;
-    font-size: 13px;
-}
-h7{
-    float: left;
-    font-size: 15px;
-}
-h8{
-    float: right;
-    margin-right: 10px;
-    font-size: 15px;
+.categories__hero h1{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto 2rem auto;
+    padding: 0 6rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-wrap: balance;
+    letter-spacing: -2px;
+    word-spacing: -1rem;
 }
 
-table{
+.categories__container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    bottom: 0;
+}
+
+.categories__list {
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
     width: 100%;
 }
 
-table img{
+.categories__list img{
     width: 100%;
-    height: 300px;
+}
+
+.categories__list:hover .categories__logo{
+    opacity: 1;
+}
+
+.categories__logo{
+    transition: all .3s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.categories__logo img{
+    width: 10rem;
+    filter: invert(1);
+
 }
