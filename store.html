@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAND NAME</title>
+    <title>Store</title>
     <!-- AOS library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
             </ul>
 
             <div class="nav__cta">
-                <div class="nav__dark-mode">
+                <div class="nav__user">
                     <i class="fa-regular fa-user"></i>
                 </div>
                 <a href="store.html">
@@ -61,19 +61,29 @@
         </div>
 
         <div class="tabs">
-            <div class="tabs__items">
-                <h1>DBTK</h1>
+            <div class="item-container">
+                <div class="tabs__items">
+                    <h1>DBTK</h1>
+                </div>
+                <div class="tabs__items">
+                    <h1>hghmnds</h1>
+                </div>
+                <div class="tabs__items">
+                    <h1>MN+LA</h1>
+                </div>
             </div>
-            <div class="tabs__items">
-                <h1>hghmnds</h1>
+
+            <div class="extra">
+                <div class="tabs__items your-cart" onclick="cart.show()">
+                    <h1>Your cart</h1>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="tabs__items sort">
+                    <h1>Sort by</h1>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
-            <div class="tabs__items">
-                <h1>MN+LA</h1>
-            </div>
-            <div class="tabs__items sort">
-                <h1>Sort by</h1>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
+
         </div>
 
         <!-- all products starts here -->
@@ -191,7 +201,7 @@
                         <option value="x-large">X-LARGE</option>
                         <option value="xx-large">XX-LARGE</option>
                     </select>
-                    <button autofocus onclick="cart.show(); slantAstrology.close()" class="btn-solid add-to-cart">Add To Cart</button>
+                    <button autofocus onclick="slantAstrology.close()" class="btn-solid add-to-cart">Add To Cart</button>
                     <button onclick="slantAstrology.close()" autofocus class="btn-solid close">Close</button>
                 </div>
             </div>
