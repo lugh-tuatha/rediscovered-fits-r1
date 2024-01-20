@@ -2,21 +2,34 @@
   color: black;
   font-size: larger;
 }
-.checkout_item img {
-  height: 50px;
+.checkout .box {
+  display: flex;
+  border: 2px solid black;
+  width: 20rem;
+  margin-top: 2rem;
 }
-.checkout .checkout_item h1 {
-  font-size: 100px;
+.checkout .box img {
+  width: 120px;
+  margin-right: 2rem;
 }
-.checkout .checkout_item p {
+.checkout .box h1 {
   color: red;
+  font-weight: 100;
+  margin-top: 1.5rem;
 }
-.checkout .checkout_item1 p {
-  color: blue;
+.box2 img {
+  width: 120px;
+  margin-right: 2rem;
 }
-.checkout .checkout_item1 img {
-  height: 100px;
+.box2 {
+  display: flex;
+  border: 2px solid black;
+  width: 20rem;
+  margin-top: 2rem;
 }
-.checkout .checkout_item1 .style {
-  color: green;
+.box2 h1 {
+  color: red;
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 1.5rem;
 }
