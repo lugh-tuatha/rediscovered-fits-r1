@@ -2,3 +2,21 @@
   color: black;
   font-size: larger;
 }
+.checkout_item img {
+  height: 50px;
+}
+.checkout .checkout_item h1 {
+  font-size: 100px;
+}
+.checkout .checkout_item p {
+  color: red;
+}
+.checkout .checkout_item1 p {
+  color: blue;
+}
+.checkout .checkout_item1 img {
+  height: 100px;
+}
+.checkout .checkout_item1 .style {
+  color: green;
+}
