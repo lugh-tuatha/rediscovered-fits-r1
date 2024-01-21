@@ -11,15 +11,12 @@ Home styles start
 }
 
 .hero__desc h1{
-    font-size: 2.5rem;
+    margin-top: 1rem;
 }
 
 .hero__desc p{
     font-size: 1.25rem;
     margin: .25rem 0;
-}
-
-.hero__desc button{
 }
 
 .hero .hero__background{
@@ -29,7 +26,7 @@ Home styles start
 
 .hero__background img{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 5rem);
 }
 
 
@@ -129,8 +126,20 @@ Popular Products styles start
 
 
 .shop__item .banner{
+    scale: .8;
+    opacity: 0;
     border-radius: 1rem;
     height: 20rem;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes fade-in{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .shop__item .shop__banner-1,
@@ -203,7 +212,7 @@ marquee .marquee__item{
 Store page styles start
 ----------------------------*/
 .store{
-    margin-top: 6.5rem;
+    margin-top: 1.5rem;
 }
 
 .store .search{
@@ -464,25 +473,12 @@ Store page styles start
     float: right;
     margin-top: 40px;
 }
-    
-.checkout{
-    border: none;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
-    background-color: var(--accent-100);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--primary-100);
-    width: 200px;
-    margin: 20px 60px;
-}
 
 /*----------------------------
 Faq's page styles start
 ----------------------------*/
 .faqs{
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 .faqs .accordion{

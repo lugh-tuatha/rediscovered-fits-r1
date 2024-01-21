@@ -1,13 +1,12 @@
 .categories__hero{
-    height: 100vh;
-    padding-top: 6.5rem;
+    height: calc(100vh - 5rem);
     position: relative;
 }
 
 .categories__hero h1{
     width: 100%;
     max-width: 80rem;
-    margin: 0 auto 2rem auto;
+    margin: 1rem auto 2rem auto;
     padding: 0 6rem;
     font-size: 4.5rem;
     font-weight: 900;
@@ -18,7 +17,7 @@
 
 .categories__container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     position: absolute;
     bottom: 0;
 }
@@ -54,5 +53,107 @@
 .categories__logo img{
     width: 10rem;
     filter: invert(1);
+}
 
+.banner{
+    background-color: var(--primary-300);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.banner .banner__desc{
+    width: 50%;
+}
+
+.banner h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-wrap: balance;
+}
+
+.banner p{
+    margin: 1rem 0;
+}
+
+/*-------------
+dbtk categories 
+-------------*/
+.categories #dbtk{
+    padding-top: 5.5rem;
+}
+
+.categories #hghmnds{
+    padding-top: 1.5rem;
+}
+
+#hghmnds .title .title__underline{
+    width: 4rem;
+}
+
+/*---------- reusable styles for categories ----------*/
+.title{
+    text-align: center;
+}
+
+.title h1{
+    color: var(--primary-100);
+}
+
+.title .title__underline{
+    width: 13rem;
+    height: .20rem;
+    margin: .5rem auto 0 auto;
+    background-color: var(--primary-100);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card{
+    cursor: pointer;
+    transition: all ease .5s;
+    
+}
+
+.card:hover{
+    border: 1px solid var(--primary-100);
+    transition: all ease .5s;
+}
+
+.card:hover button{
+    opacity: 1;
+}
+
+.card .card__content{
+    padding-bottom: .5rem;
+}
+
+.card__content img{
+    width: 100%;
+}
+
+.card__content h1{
+    font-size: 1.115rem;
+}
+
+.card__content p{
+    font-size: .90rem;
+    margin-top: .5rem;
+}
+
+.card button{
+    border: 0;
+    background-color: var(--primary-100);
+    width: 100%;
+    color: white;
+    padding: .5rem 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: all ease .5s;
 }
