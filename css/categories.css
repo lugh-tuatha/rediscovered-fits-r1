@@ -60,6 +60,7 @@
     padding: 2rem;
     margin-top: 2rem;
     border-radius: 1rem;
+    position: relative;
 }
 
 .banner .banner__desc{
@@ -74,6 +75,15 @@
 
 .banner p{
     margin: 1rem 0;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 17.15rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 /*-------------
