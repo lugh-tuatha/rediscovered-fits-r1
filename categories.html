@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html" class="nav__active" >Categories</a></li>
+                <li><a href="categories.html" class="nav__active">Categories</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
@@ -38,8 +38,43 @@
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
                 </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
+
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq's</a></li>
+                </ul>
+            </div>
+        </dialog>
     </nav>
 
     <div class="categories__hero">
@@ -78,9 +113,11 @@
     <main>
         <div class="banner">
             <div class="banner__desc">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus asperiores hic totam sunt!</p>
-                <button class="btn">Shop Now</button>
+                <h1>Explore Our Streetwear World of Categories!</h1>
+                <p>At Rediscovered Fits, we believe in embracing diversity and providing you with a wide range of streetwear categories to suit every style. </p>
+                <a href="store.html">
+                    <button class="btn">Shop Now</button>
+                </a>
             </div>
         </div>
 

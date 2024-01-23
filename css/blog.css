@@ -30,7 +30,13 @@
     line-height: 1.15rem;
 }
 
+.blog__card .blog__info{
+    display: flex;
+    justify-content: space-between;
+}
 
 .blogs-footer{
-    margin-top: 2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }

@@ -19,7 +19,7 @@
     <nav class="nav">
         <div class="nav__container">
             <a href="index.html" class="nav__brand">
-                <img src="assets/img/brand-logo.png" alt="Brand Logo">
+                <img src="assets/img/brand-logo.png" alt="">
                 <h1>Rediscovered Fits</h1>
             </a>
             <ul>
@@ -35,18 +35,53 @@
                 <div class="nav__user">
                     <i class="fa-regular fa-user"></i>
                 </div>
-                
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
                 </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
+
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq's</a></li>
+                </ul>
+            </div>
+        </dialog>
     </nav>
 
-
-    <main class="about">
-        <section>
+    <main>
+        <section class="about">
             <h1>ABOUT US</h1>
+            <hr>
+
             <img src="assets/img/brand-logo.png" height="340px">
             <img src="assets/img/teams/orgchart (2).png">
             <h2>Rediscovered Fits</h2><br><br>

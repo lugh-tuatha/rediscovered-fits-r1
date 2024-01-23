@@ -23,10 +23,10 @@
                 <h1>Rediscovered Fits</h1>
             </a>
             <ul>
-                <li><a href="index.html" class="nav__active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="categories.html">Categories</a></li>
-                <li><a href="store.html">Store</a></li>
+                <li><a href="store.html" class="nav__active">Store</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
             </ul>
@@ -38,10 +38,44 @@
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
                 </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
-    </nav>
 
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq's</a></li>
+                </ul>
+            </div>
+        </dialog>
+    </nav>
 
     <main class="store">
         <div class="search">
@@ -96,7 +130,7 @@
                     <h1>GNARLY BUTTER DAD</h1>
                     <p>₱ 800</p>
                 </div>
-                <button class="quick-view" onclick="butterDad.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="butterDad.showModal()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -107,7 +141,7 @@
                     <h1>UND DIME MONO MESH SHORTS</h1>
                     <p>₱ 900</p>
                 </div>
-                <button class="quick-view" onclick="diceMono.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="diceMono.showModal()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -118,7 +152,7 @@
                     <h1>DBTK STUDIO TEE - BLACK</h1>
                     <p>₱ 650</p>
                 </div>
-                <button class="quick-view" onclick="studioTee.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="studioTee.showModal()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -129,7 +163,7 @@
                     <h1>DBTK SLANT ASTROLOGY TEE - BLACK</h1>
                     <p>₱ 1,100</p>
                 </div>
-                <button class="quick-view" onclick="slantAstrology.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="slantAstrology.showModal()">QUICK VIEW</button>
             </div>
         </div>
         <!-- all products ends here -->
@@ -141,8 +175,8 @@
                 <div class="dialog__details">
                     <h1>BUTTER DAD</h1>
                     <p>₱ 800</p>
-                    <button onclick="butterDad.close()" autofocus class="btn-solid">Add To Cart</button>
-                    <button onclick="butterDad.close()" autofocus class="btn-solid close">Close</button>
+                    <button onclick="butterDad.close()" autofocus class="btn">Add To Cart</button>
+                    <button onclick="butterDad.close()" autofocus class="btn btn-transparent">Close</button>
                 </div>
             </div>
         </dialog>
@@ -161,8 +195,8 @@
                         <option value="x-large">X-LARGE</option>
                         <option value="xx-large">XX-LARGE</option>
                     </select>
-                    <button onclick="diceMono.close()" autofocus class="btn-solid">Add To Cart</button>
-                    <button onclick="diceMono.close()" autofocus class="btn-solid close">Close</button>
+                    <button onclick="diceMono.close()" autofocus class="btn">Add To Cart</button>
+                    <button onclick="diceMono.close()" autofocus class="btn btn-transparent">Close</button>
                 </div>
             </div>
         </dialog>
@@ -181,8 +215,8 @@
                         <option value="x-large">X-LARGE</option>
                         <option value="xx-large">XX-LARGE</option>
                     </select>
-                    <button onclick="studioTee.close()" autofocus class="btn-solid">Add To Cart</button>
-                    <button onclick="studioTee.close()" autofocus class="btn-solid close">Close</button>
+                    <button onclick="studioTee.close()" autofocus class="btn">Add To Cart</button>
+                    <button onclick="studioTee.close()" autofocus class="btn btn-transparent">Close</button>
                 </div>
             </div>
         </dialog>
@@ -201,8 +235,8 @@
                         <option value="x-large">X-LARGE</option>
                         <option value="xx-large">XX-LARGE</option>
                     </select>
-                    <button autofocus onclick="slantAstrology.close()" class="btn-solid add-to-cart">Add To Cart</button>
-                    <button onclick="slantAstrology.close()" autofocus class="btn-solid close">Close</button>
+                    <button autofocus onclick="slantAstrology.close()" class="btn add-to-cart">Add To Cart</button>
+                    <button onclick="slantAstrology.close()" autofocus class="btn btn-transparent">Close</button>
                 </div>
             </div>
         </dialog>

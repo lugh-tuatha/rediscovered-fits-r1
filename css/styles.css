@@ -2,6 +2,7 @@
 Home styles start
 -------------------*/
 .hero .hero__desc{
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -184,9 +185,9 @@ Popular Products styles start
     margin-top: 1.5rem;
 }
 
-/*----------------------------
+/*-----------------------
 Marquee style start
-----------------------------*/
+-----------------------*/
 .brands{
     margin-top: 3rem;
 }
@@ -208,9 +209,49 @@ marquee .marquee__item{
     height: 50px;
 }
 
-/*----------------------------
+.newsletter{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-300);
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.newsletter img{
+    width: 35%;
+}
+
+.newsletter__message{
+    width: 65%;
+}
+
+.newsletter__message h1{
+    font-size: 1.5rem;
+}
+
+.newsletter__message p{
+    font-size: .9rem;
+    margin: .5rem 0 2rem 0;
+}
+
+.newsletter__input input[type="email"]{
+    border: none;
+    padding: 1rem;
+    width: 20rem;
+    max-width: 60%;
+}
+
+.newsletter__input .btn{
+    border-radius: 0;
+    margin-left: -1rem;
+}
+
+/*-------------------------
 Store page styles start
-----------------------------*/
+-------------------------*/
 .store{
     margin-top: 1.5rem;
 }
@@ -299,7 +340,7 @@ Store page styles start
 }
 
 .tabs .your-cart i{
-    color: var(--accent-200);
+    color: var(--primary-100);
     font-size: 1.25rem;
 }
 
@@ -353,16 +394,11 @@ Store page styles start
 }
 
 .products__card .quick-view{
-    background-color: black;
-    border: none;
-    color: #fff;
-    padding: 1rem 1.25rem;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    cursor: pointer;
     transition: opacity 0.5s ease;
 }
 
