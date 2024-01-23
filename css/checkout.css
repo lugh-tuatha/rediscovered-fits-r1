@@ -1,0 +1,71 @@
+.checkout .background{
+  position: relative;
+}
+
+.checkout .background-img{
+  width: 68rem;
+  height: 23.6rem;
+  z-index: 0;
+}
+
+.checkout .rider{
+  position: absolute;
+  z-index: 2;
+  top: 3rem;
+  left: 40rem;
+  animation-name: ; /* keyframes name */
+  animation-duration: ; /* duration of animation */
+  animation-iteration-count: ; /* infinite */
+}
+
+@keyframes identifier {
+  
+}
+
+marquee{
+  position: absolute;
+}
+
+.checkout img.clouds{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10rem;
+  z-index: 20;
+}
+
+.checkout p {
+  color: black;
+  font-size: larger;
+}
+.checkout .box {
+  display: flex;
+  border: 2px solid black;
+  width: 20rem;
+  margin-top: 2rem;
+}
+.checkout .box img {
+  width: 120px;
+  margin-right: 2rem;
+}
+.checkout .box h1 {
+  color: red;
+  font-weight: 100;
+  margin-top: 1.5rem;
+}
+.box2 img {
+  width: 120px;
+  margin-right: 2rem;
+}
+.box2 {
+  display: flex;
+  border: 2px solid black;
+  width: 20rem;
+  margin-top: 2rem;
+}
+.box2 h1 {
+  color: red;
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 1.5rem;
+}

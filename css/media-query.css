@@ -1,4 +1,5 @@
-@media (max-width: 1010px) {
+@media (max-width: 1080px) {
+    /*----- responsive navigation -----*/
     .nav .nav__container {
         padding: 1rem 1rem;
     }
@@ -10,31 +11,109 @@
     .nav .nav__cta .menu{
         display: block;
     }
+
+    /*----- responsive homepage -----*/
+    .shop .shop__desc{
+        display: block;
+    }
+
+    /*----- responsive footer -----*/
+    footer .footer__container{
+        padding: 1rem 1rem;
+    }
 }
 
 @media (max-width: 900px) {
+    /*----- responsive navigation -----*/
     main,
     nav .container{
         padding:.5rem 1.25rem;
     }
+
+    /*----- responsive homepage -----*/
+    .hero .hero__background{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero__background img:nth-child(4){
+        display: none;
+    }
+
+    .shop .shop__item{
+        grid-template-columns: auto;
+    }
 }
 
 @media (max-width: 768px){
+    /*----- responsive homepage -----*/
+    .hero .hero__desc{
+        width: 90%;
+    }
+
+    .hero .hero__background{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__background img:nth-child(3),
+    .hero__background img:nth-child(4){
+        display: none;
+    }
+
+    .newsletter{
+        display: block;
+    }
+
+    .newsletter img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter__message{
+        width: 100%;
+    }
+
+    /*----- responsive storepage -----*/
+    .popular__card,
     .products{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*----- responsive footer -----*/
+    footer ul{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1rem;
     }
 }
 
 @media (max-width: 530px){
+    /*----- responsive navigation -----*/
     .nav__container .nav__brand h1{
         display: none;
+    }
+
+    /*----- responsive homepage -----*/
+    .hero .hero__background{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero__background img{
+        display: none;
+    }
+
+    .hero__background img:nth-child(1){
+        display: block;
+    }
+
+    .popular__card,
+    .products{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 375px){
-    /* if max-width is equal to 375px do this  */
+    /*----- responsive storepage -----*/
+    .popular__card,
     .products{
         grid-template-columns: 1fr;
     }
-
 }

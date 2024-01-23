@@ -1,45 +1,169 @@
-.categories{
-    margin-top: 6.5rem;
+.categories__hero{
+    height: calc(100vh - 5rem);
+    position: relative;
 }
 
-.categories h1{
-    font-size: 55px;
-    margin-top: 20px;
-}
-.categories p{
-    margin-top: 10px;
-}
-h3{
-    margin-left: 43%;
-    margin-top: 15px;
-}
-h4{
-    float: left;
-}
-h5{
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 30px;
-}
-h6{
-    float: left;
-    font-size: 13px;
-}
-h7{
-    float: left;
-    font-size: 15px;
-}
-h8{
-    float: right;
-    margin-right: 10px;
-    font-size: 15px;
+.categories__hero h1{
+    width: 100%;
+    max-width: 80rem;
+    margin: 1rem auto 2rem auto;
+    padding: 0 6rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-wrap: balance;
+    letter-spacing: -2px;
+    word-spacing: -1rem;
 }
 
-table{
+.categories__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    bottom: 0;
+}
+
+.categories__list {
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
     width: 100%;
 }
 
-table img{
+.categories__list img{
     width: 100%;
-    height: 300px;
+}
+
+.categories__list:hover .categories__logo{
+    opacity: 1;
+}
+
+.categories__logo{
+    transition: all .3s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.categories__logo img{
+    width: 10rem;
+    filter: invert(1);
+}
+
+.banner{
+    background-color: var(--primary-300);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.banner .banner__desc{
+    width: 65%;
+}
+
+.banner h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-wrap: balance;
+}
+
+.banner p{
+    margin: 1rem 0;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 17.15rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/*-------------
+dbtk categories 
+-------------*/
+.categories #dbtk{
+    padding-top: 5.5rem;
+}
+
+.categories #hghmnds{
+    padding-top: 1.5rem;
+}
+
+#hghmnds .title .title__underline{
+    width: 4rem;
+}
+
+/*---------- reusable styles for categories ----------*/
+.title{
+    text-align: center;
+}
+
+.title h1{
+    color: var(--primary-100);
+}
+
+.title .title__underline{
+    width: 13rem;
+    height: .20rem;
+    margin: .5rem auto 0 auto;
+    background-color: var(--primary-100);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card{
+    cursor: pointer;
+    transition: all ease .5s;
+    
+}
+
+.card:hover{
+    border: 1px solid var(--primary-100);
+    transition: all ease .5s;
+}
+
+.card:hover button{
+    opacity: 1;
+}
+
+.card .card__content{
+    padding-bottom: .5rem;
+}
+
+.card__content img{
+    width: 100%;
+}
+
+.card__content h1{
+    font-size: 1.115rem;
+}
+
+.card__content p{
+    font-size: .90rem;
+    margin-top: .5rem;
+}
+
+.card button{
+    border: 0;
+    background-color: var(--primary-100);
+    width: 100%;
+    color: white;
+    padding: .5rem 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: all ease .5s;
 }

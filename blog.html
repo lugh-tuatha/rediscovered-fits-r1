@@ -36,62 +36,83 @@
                     <i class="fa-regular fa-user"></i>
                 </div>
                 <a href="store.html">
-    <button class="btn">Shop Now</button>
-</a>
+                    <button class="btn">Shop Now</button>
+                </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
+
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq's</a></li>
+                </ul>
+            </div>
+        </dialog>
     </nav>
 
     <main>
-        <section class="blogs">
-            <h1>STREETWEAR CO.</h1><hr>
+        <section class="blog">
+            <h1>STREETBLOG</h1>
+            <hr>
+            
+            <div class="blog__container">    
+                <div class="blog__card">
+                    <img src="assets/img/blogs/thumb/hghmndsxmedisina.webp" alt="Blog thumb 1">
+                    <div class="blog__info">
+                        <p>AUGUST 19, 2023</p>
+                        <p>HGHMNDS</p>
+                    </div>
+                    <h2>HGHMNDSxMEDISINA</h2>
+                    <p>Local streetwear history is made. HGHMNDS and MEDISINA have finally joined forces for a limited edition collection that resonates with the responsible rebels of today....</p>
+                </div>
 
-            <table>
-                <tr>
-                    <th>
-                        <img src="assets/blogs/thumb/fading fads.jpg">
-                    </th>
-                    <th>
-                        <img src="assets/blogs/thumb/living.jpg">
-                    </th>
-                    <th>
-                        <img src="assets/blogs/thumb/abakada.jpg">
-                    </th>
-                    <th>
-                        <img src="assets/blogs/thumb/dbtkxmondaysuck.jpg">
-                    </th>
-                </tr>
-                <tr>
-                    <td>
+                <div class="blog__card">
+                    <img src="assets/img/blogs/thumb/fading fads.jpg" alt="Blog thumb 1">
+                    <div class="blog__info">
                         <p>May 22, 2023</p>
-                        <h2>FADING FADS</h2>
-                        <h3>We are fond of riding into the However
-                            with constantly conforming to these ever-chang...
-                        </h3>
-                    </td>
-                    <td>
-                        <p>March 28, 2023</p>
-                        <h2>LIVING IN TWENTEENS</h2>
-                        <h3>Live in you twenties, without leaving the life of a teen.
-                            Do not let social media stand...
-                        </h3>
-                    </td>
-                    <td>
-                        <p>March 16, 2023</p>
-                        <h2>ABAKADA CO. MISSION</h2>
-                        <h3>ABAKADA Clothing is a Filipino streetwear brand that was
-                            founded in 2018...
-                        </h3>
-                    </td>
-                    <td>
-                        <p>November 25, 2022</p>
-                        <h2>DBTK x MONDAYSUCK</h2>
-                        <h3>COMING INTO FRUITION: DBTK X MONDAYSUCK COLLECTION 
-                            COLLABORAION CLOTHING WEAR
-                        </h3>
-                    </td>
-                </tr>
-            </table>
+                        <p>DBTK</p>
+                    </div>
+                    <h2>FADING FADS</h2>
+                    <p>Social media algorithm is grabbing our interest fastly. It is convenient because we can easily access our interests...</p>
+                </div>
+
+                <div class="blog__card">
+                    <img src="assets/img/blogs/thumb/abkd-cover.webp" alt="Blog thumb 1">
+                    <div class="blog__info">
+                        <p>May 1, 2023</p>
+                        <p>DBTK</p>
+                    </div>
+                    <h2>ON A MISSION TO PROMOTE FILIPINO CULTURE</h2>
+                    <p>The brand's name is derived from the Filipino alphabet “Abakada” which consists of 20 letters....</p>
+                </div>
+            </div>
         </section>
     </main>
 

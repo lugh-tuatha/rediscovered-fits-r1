@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="categories.html" class="nav__active" >Categories</a></li>
+                <li><a href="categories.html" class="nav__active">Categories</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
@@ -38,101 +38,165 @@
                 <a href="store.html">
                     <button class="btn">Shop Now</button>
                 </a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                </div>
             </div>
         </div>
 
+        <dialog class="nav__mobile" id="navMobile">
+            <div class="nav__container">
+                <a href="index.html" class="nav__brand">
+                    <img src="assets/img/brand-logo.png" alt="">
+                    <h1>Rediscovered Fits</h1>
+                </a>
+
+                <div class="nav__cta">
+                    <div class="nav__user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="store.html">
+                        <button class="btn">Shop Now</button>
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">Faq's</a></li>
+                </ul>
+            </div>
+        </dialog>
     </nav>
 
-    <main class="categories">
-        <h1>Categories</h1>
-        <p>We have the 3 Most Influential Local Brands
-             just for you and your Everyday Outfit </p>
-        <h5><img src="assets/img/logo/hghmnds.jpg"></h5>
-        <table>
-            <tr>
-                <td><img src="assets/img/brands/hghmnds/GAS-SHACK-POLO.png" ></td>
-                <td><img src="assets/img/brands/hghmnds/SENSES-STRAIN-LONGSLEEVES.png"></td>
-                <td><img src="assets/img/brands/hghmnds/LOGO-FEST-SHORTS.png"></td>
-            </tr>
-            <tr>
-                <th>
-                    <h4>GAS SHACK POLO</h4><br>
-                    <h6>HGHMNDS</h6><br>
-                    <h7>₱1,100.00</h7>
-                    <h8>4.9 (150 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>SENSES STRAIN LONGSLEEVES</h4><br>
-                    <h6>HGHMNDS</h6><br>
-                    <h7>₱700.00</h7>
-                    <h8>4.7 (125 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>LOGO FEST SHORTS</h4><br>
-                    <h6>HGHMNDS</h6><br>
-                    <h7>₱900.00</h7>
-                    <h8>4.5 (95 Reviews)</h8>
-                </th>
-            </tr>
-        </table>                
-                <h3><img src="assets/img/logo/dbtk.jpg" 
-                    width="200px"></h3>
-        <table>
-            <tr>
-                <td><img src="assets/img/brands/dbtk/SPLICED-TEE.png" ></td>
-                <td><img src="assets/img/store/dbtk/slantastro.png"></td>
-                <td><img src="assets/img/brands/dbtk/BITMAP-LONGSLEEVES.png"></td>
-            </tr>
-            <tr>
-                <th>
-                    <h4>R&D SPLICED TEE</h4><br>
-                    <h6>DBTK</h6><br>
-                    <h7>₱1,200.00</h7>
-                    <h8>5.0 (250 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>SLANT ASTROLOGY TEE</h4><br>
-                    <h6>DBTK</h6><br>
-                    <h7>₱1,000.00</h7>
-                    <h8>4.5 (165 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>BITMAP LONGSLEEVES</h4><br>
-                    <h6>DBTK</h6><br>
-                    <h7>₱1,200.00</h7>
-                    <h8>4.7 (210 Reviews)</h8>
-                </th>
-            </tr>
-        </table>
-                <h3><img src="assets/img/logo/mn+la.jpg" 
-                    width="180px"></h3>
-        <table>
-            <tr>
-                <td><img src="assets/img/brands/mn+la/SWEATSHIRT-IN-CAVIAR.png" ></td>
-                <td><img src="assets/img/brands/mn+la/WIDE-PANTS-V2-IN-HEATHER-GREY.png"></td>
-                <td><img src="assets/img/brands/mn+la/AFTERHOOD-IN-WINE.png"></td>
-            </tr>
-            <tr>
-                <th>
-                    <h4>SWEATSHIRT IN CAVIAR</h4><br>
-                    <h6>MN+LA</h6><br>
-                    <h7>₱970.00</h7>
-                    <h8>4.2 (120 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>WIDE PANTS V2 IN HEATHER GREY</h4><br>
-                    <h6>MN+LA</h6><br>
-                    <h7>₱1,470.00</h7>
-                    <h8>4.4 (170 Reviews)</h8>
-                </th>
-                <th>
-                    <h4>AFTERHOOD IN WINE</h4><br>
-                    <h6>MN+LA</h6><br>
-                    <h7>₱2,270.00</h7>
-                    <h8>4.3 (135 Reviews)</h8>
-                </th>
-            </tr>
-        </table>   
+    <div class="categories__hero">
+        <div class="hero__banner">
+            <h1>DISCOVER LIMITED URBAN FASHION WITHOUT LIMITATION</h1>
+        </div>
+        
+        <div class="categories__container">
+            <a class="categories__list" href="#dbtk">
+                <img src="assets/img/brands/dbtk/SLANTASTROLOGY.png" alt="Categories 1">
+                <div class="categories__logo">
+                    <img src="assets/img/logo/dbtk.jpg" alt="">
+                </div>
+            </a>
+            <a class="categories__list" href="#hghmnds">
+                <img src="assets/img/brands/hghmnds/caught-ape-shirt.png" alt="Categories 1">
+                <div class="categories__logo">
+                    <img src="assets/img/logo/hghmnds.jpg" alt="">
+                </div>
+            </a>
+            <div class="categories__list">
+                <img src="assets/img/brands/mn+la/tee-in-wood.png" alt="Categories 1">
+                <div class="categories__logo">
+                    <img src="assets/img/logo/mn+la.jpg" alt="">
+                </div>
+            </div>
+            <div class="categories__list">
+                <img src="assets/img/brands/undrafted/fence.png" alt="Categories 1">
+                <div class="categories__logo">
+                    <img src="assets/img/logo/und-black.webp" alt="undrafted logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="banner">
+            <div class="banner__desc">
+                <h1>Explore Our Streetwear World of Categories!</h1>
+                <p>At Rediscovered Fits, we believe in embracing diversity and providing you with a wide range of streetwear categories to suit every style. </p>
+                <a href="store.html">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </div>
+            <div>
+                <img src="assets/img/model/andrei.jpg" alt="">
+            </div>
+        </div>
+
+        <section class="categories">
+            <div id="dbtk">
+                <div class="title">
+                    <h1>Don't Blame The Kids</h1>
+                    <div class="title__underline"></div>
+                </div>
+
+                <div class="products">
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/dbtk/BITMAP-LONGSLEEVES.png" alt="">
+                            <h1>Bitmap Longsleeve</h1>
+                            <p>₱ 1,200</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/dbtk/BITMAP-LONGSLEEVES.png" alt="">
+                            <h1>Bitmap Longsleeve</h1>
+                            <p>₱ 1,200</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/dbtk/BITMAP-LONGSLEEVES.png" alt="">
+                            <h1>Bitmap Longsleeve</h1>
+                            <p>₱ 1,200</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hghmnds">
+                <div class="title">
+                    <h1>HGHMNDS</h1>
+                    <div class="title__underline"></div>
+                </div>
+
+                <div class="products">
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/hghmnds/GAS-SHACK-POLO.png" alt="">
+                            <h1>Gas Shack Polo</h1>
+                            <p>₱ 1,200</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/hghmnds/SENSES-STRAIN-LONGSLEEVES.png" alt="">
+                            <h1>Senses Strain Longsleeve</h1>
+                            <p>₱ 800</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="assets/img/brands/hghmnds/LOGO-FEST-SHORTS.png" alt="">
+                            <h1>Logo Fest Shorts</h1>
+                            <p>₱ 900</p>
+                        </div>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

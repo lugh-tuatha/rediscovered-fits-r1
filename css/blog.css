@@ -1,45 +1,42 @@
-.blogs{
-    margin-top: 6.5rem;
+.blog{
+    margin-top: 1rem;
 }
 
-.blogs h1 {
-    font-size: 40px;
+.blog h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
-.blogs table{
-    margin-top: 2rem;
+.blog__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
-.blogs p{
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.blogs h2{
-    font-size: 20px;
-    margin-top: 10px;
-    color: black;
-}
-.blogs h3{
-    font-size: 13px;
-    margin-top: 10px;
-}
-
-.blogs table{
+.blog__card img{
     width: 100%;
+    aspect-ratio: 16/9;
 }
 
-.blogs img{
-    width: 100%;
-    aspect-ratio: 1/1;
+.blog__card h2{
+    font-size: 1.25rem;
+    margin: .5rem 0;
 }
 
-.blogs th, td{
-    width: 25%;
+.blog__card p{
+    font-size: .75rem;
+    opacity: .85;
+    line-height: 1.15rem;
+}
+
+.blog__card .blog__info{
+    display: flex;
+    justify-content: space-between;
 }
 
 .blogs-footer{
-    width: 100%;
     position: absolute;
+    width: 100%;
     bottom: 0;
 }
