@@ -1,4 +1,8 @@
-.about{
+.about {
+    margin-top: 1rem;
+}
+
+.about__hero {
     margin-top: 1rem;
 }
 
@@ -7,31 +11,19 @@
     font-weight: 900;
 }
 
-h2{
+.about h2 {
     margin-top: 20px;
 }
 
-.info{
-    width: 80%;
-    font-size: 18px;
+.logo {
+    margin-top: 5rem;
+    width: 15rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about-footer{
-    width: 100%;
-    position: absolute;
-
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    text-align: justify;
 }

@@ -90,7 +90,7 @@
     .nav__container .nav__brand h1{
         display: none;
     }
-
+                                     
     /*----- responsive homepage -----*/
     .hero .hero__background{
         grid-template-columns: repeat(1, 1fr);
@@ -108,12 +108,86 @@
     .products{
         grid-template-columns: 1fr 1fr;
     }
+
+    /*----- responsive aboutpage -----*/
+    .about__hero {
+        width: 100%;
+    }
+    
+    /*----- responsive categories -----*/
+    .categories__hero {
+        height: auto;
+    }
+
+    .categories__hero h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        padding: 0 1.5rem;
+        letter-spacing: normal;
+    }
+
+    .categories__container {
+        grid-template-columns: repeat(2, 1fr);
+        position: static;
+    }
+
+    .banner {
+        padding: 1.5rem;
+    }
+
+    .banner .banner__desc {
+        width: 100%;
+    }
+    
+    .banner .banner__image {
+        display: none;
+    }
+
+    .categories #dbtk {
+        padding-top: 1.5rem;
+    }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    } 
+
+    /*----- responsive storepage -----*/
+    .store .search input {
+        width: 100%;
+    }
+
+    .feature {
+        padding: 1.5rem;
+    }
+
+    .feature h1 {
+        width: 100%;
+    }
+
+    .feature__hero {
+        display: none;
+    }
+
+    /*----- responsive homepage -----*/
+    .tabs {
+        justify-content: end;
+    }
+
+    .tabs .brand__tags {
+        display: none;
+    }
+
+    /*----- responsive blog -----*/
+    .blog__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 375px){
     /*----- responsive storepage -----*/
     .popular__card,
-    .products{
+    .products {
         grid-template-columns: 1fr;
     }
 }

@@ -24,10 +24,10 @@
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="nav__active">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="nav__active">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
             </ul>
 
@@ -39,31 +39,12 @@
                     <button class="btn">Shop Now</button>
                 </a>
                 <div class="menu">
-                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
 
-        <dialog class="nav__mobile" id="navMobile">
-            <div class="nav__container">
-                <a href="index.html" class="nav__brand">
-                    <img src="assets/img/brand-logo.png" alt="">
-                    <h1>Rediscovered Fits</h1>
-                </a>
-
-                <div class="nav__cta">
-                    <div class="nav__user">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <a href="store.html">
-                        <button class="btn">Shop Now</button>
-                    </a>
-                    <div class="menu">
-                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
-                    </div>
-                </div>
-            </div>
-
+        <div class="nav__mobile" id="navMobile">
             <div class="nav__links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -74,27 +55,27 @@
                     <li><a href="faqs.html">Faq's</a></li>
                 </ul>
             </div>
-        </dialog>
+        </div>
     </nav>
 
-    <main>
-        <section class="about">
-            <h1>ABOUT US</h1>
-            <hr>
+    <main class="about">
+        <h1>ABOUT US</h1>
+        <hr>
+        <img src="assets/img/about-banner.webp" alt="About" class="about__hero">
+        <h2>Rediscovered Fits</h2>
+        <div class="desc">
+            <p>Rediscovered-Fits was founded on 2023 thru our passion for fashion and unique styles. What was a dream of us that started from a simple hobby became a product itself.</p>
+            <p>It all started as a task, a website our team needed to provide and we ended up creating our own clothing website. Our team consists of us Kc, Ace, Reynielle, Aneeza, and Tristan, with the help of our team leader Ace and the same passion we share we have successfully finished our own clothing website.</p>
+            <p>Rediscovered Fits is for the people who wants to express themselves thru unique styles of clothing and their taste of fashion. Feel free to browse our products and services and purchase the product of your choice and comes with our quality provided services.</p>
+            <p>BSIS-11B<br>ACLC MANILA</p>
+        </div>
 
-            <img src="assets/img/brand-logo.png" height="340px">
-            <h2>Rediscovered Fits</h2><br><br>
-            <p class="info">Rediscovered-Fits was founded on 2023 thru our passion for fashion and unique styles. What was a dream of us that started from a simple hobby became a product itself.</p>
-            <br><br>
-            <p class="info">It all started as a task, a website our team needed to provide and we ended up creating our own clothing website. Our team consists of us Kc, Ace, Reynielle, Aneeza, and Tristan, with the help of our team leader Ace and the same passion we share we have successfully finished our own clothing website.</p>
-            <br><br>
-            <p class="info">Rediscovered Fits is for the people who wants to express themselves thru unique styles of clothing and their taste of fashion. Feel free to browse our products and services and purchase the product of your choice and comes with our quality provided services.</p>
-            <br><br>
-            <p class="info">BSIS-11B<br>ACLC MANILA</p>
-        </section>
+        <center>
+            <img src="assets/img/brand-logo.png" class="logo">
+        </center>
     </main>
 
-    <footer class="about-footer">
+    <footer>
         <h1>REDISCOVERED FITS</h1>
 
         <ul>
@@ -103,7 +84,7 @@
             <li><a href="categories.html">Categories</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="blog.html" class="nav__active">Blog</a></li>
-            <li><a href="#">Faq's</a></li>
+            <li><a href="faqs.html">Faq's</a></li>
         </ul>
 
         <p class="copyright">REDISCOVERED FITS. Copyright © 2024 - All Rights Reserve || <a href="team.html">Meet our team</a></p>
@@ -116,5 +97,7 @@
             duration: 1100
         });
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

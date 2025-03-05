@@ -280,7 +280,7 @@ Store page styles start
     font-size: 1.25rem;
 }
 
-.store .feature{
+.feature{
     background-color: var(--primary-300);
     border-radius: 1.5rem;
     padding: 2.5rem;
@@ -289,7 +289,7 @@ Store page styles start
     justify-content: space-between;
 }
 
-.store .feature h1{
+.feature h1{
     width: 50%;
     text-wrap: balance;
     margin-bottom: 1rem;
@@ -298,7 +298,6 @@ Store page styles start
 .feature__hero{
     position: relative;
     width: 11.5rem;
-
 }
 
 .feature__hero img{
@@ -313,39 +312,41 @@ Store page styles start
     gap: 1rem;
 }
 
-.tabs .extra,
-.tabs .item-container{
+.tabs .utility,
+.tabs .brand__tags{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.tabs__items{
+.utility .brand,
+.brand__tags .brand{
     background-color: var(--bg-200);
     padding: .75rem 1.25rem;
     border-radius: 3rem;
     cursor: pointer;
 }
 
-.tabs__items h1{
+.utility .brand h1,
+.brand__tags .brand h1{
     font-size: .85rem;
     font-weight: 200;
 }
 
-.tabs .your-cart{
+.utility .your-cart{
     display: flex;
     gap: 1rem;
     align-items: center;
     background-color: transparent;
 }
 
-.tabs .your-cart i{
+.utility .your-cart i{
     color: var(--primary-100);
     font-size: 1.25rem;
 }
 
 
-.tabs .sort{
+.utility .sort{
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -353,7 +354,7 @@ Store page styles start
     border: 1px solid rgba(0, 0, 0, .5);
 }
 
-.tabs .sort i{
+.utility .sort i{
     font-size: .85rem;
 }
 
@@ -404,17 +405,6 @@ Store page styles start
 
 .products__card:hover .quick-view{
     opacity: 1;
-}
-
-.store .dialog{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 0;
-    background-color: var(--bg-300);
-    border: 1px solid var(--primary-100);
-    outline: none;
-    padding: 1rem;
 }
 
 .dialog .dialog__container{

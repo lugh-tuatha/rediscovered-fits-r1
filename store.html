@@ -10,6 +10,10 @@
     <!-- Font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- LDCV lib cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/ldcover/dist/index.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/loadingio/ldcover/dist/index.min.js"></script>
+
     <!-- CSS links -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -26,8 +30,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="categories.html">Categories</a></li>
-                <li><a href="store.html" class="nav__active">Store</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="blog.html" class="nav__active">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
             </ul>
 
@@ -39,31 +43,12 @@
                     <button class="btn">Shop Now</button>
                 </a>
                 <div class="menu">
-                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
 
-        <dialog class="nav__mobile" id="navMobile">
-            <div class="nav__container">
-                <a href="index.html" class="nav__brand">
-                    <img src="assets/img/brand-logo.png" alt="">
-                    <h1>Rediscovered Fits</h1>
-                </a>
-
-                <div class="nav__cta">
-                    <div class="nav__user">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <a href="store.html">
-                        <button class="btn">Shop Now</button>
-                    </a>
-                    <div class="menu">
-                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
-                    </div>
-                </div>
-            </div>
-
+        <div class="nav__mobile" id="navMobile">
             <div class="nav__links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -74,7 +59,7 @@
                     <li><a href="faqs.html">Faq's</a></li>
                 </ul>
             </div>
-        </dialog>
+        </div>
     </nav>
 
     <main class="store">
@@ -95,29 +80,28 @@
         </div>
 
         <div class="tabs">
-            <div class="item-container">
-                <div class="tabs__items">
+            <div class="brand__tags">
+                <div class="brand">
                     <h1>DBTK</h1>
                 </div>
-                <div class="tabs__items">
+                <div class="brand">
                     <h1>hghmnds</h1>
                 </div>
-                <div class="tabs__items">
+                <div class="brand">
                     <h1>MN+LA</h1>
                 </div>
             </div>
 
-            <div class="extra">
-                <div class="tabs__items your-cart" onclick="cart.show()">
+            <div class="utility">
+                <div class="brand your-cart">
                     <h1>Your cart</h1>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <div class="tabs__items sort">
+                <div class="brand sort">
                     <h1>Sort by</h1>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
-
         </div>
 
         <!-- all products starts here -->
@@ -130,7 +114,7 @@
                     <h1>GNARLY BUTTER DAD</h1>
                     <p>₱ 800</p>
                 </div>
-                <button class="quick-view btn" onclick="butterDad.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="butterDad.toggle()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -141,7 +125,7 @@
                     <h1>UND DIME MONO MESH SHORTS</h1>
                     <p>₱ 900</p>
                 </div>
-                <button class="quick-view btn" onclick="diceMono.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="diceMono.toggle()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -152,7 +136,7 @@
                     <h1>DBTK STUDIO TEE - BLACK</h1>
                     <p>₱ 650</p>
                 </div>
-                <button class="quick-view btn" onclick="studioTee.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="studioTee.toggle()">QUICK VIEW</button>
             </div>
 
             <div class="products__card" data-aos="zoom-in">
@@ -163,144 +147,92 @@
                     <h1>DBTK SLANT ASTROLOGY TEE - BLACK</h1>
                     <p>₱ 1,100</p>
                 </div>
-                <button class="quick-view btn" onclick="slantAstrology.showModal()">QUICK VIEW</button>
+                <button class="quick-view btn" onclick="slantAstrology.toggle()">QUICK VIEW</button>
             </div>
         </div>
         <!-- all products ends here -->
 
         <!-- item dialog start -->
-        <dialog id="butterDad" class="dialog">
-            <div class="dialog__container">
-                <img src="assets/img/store/gnarly/butter-dad.png" alt="">
-                <div class="dialog__details">
-                    <h1>BUTTER DAD</h1>
-                    <p>₱ 800</p>
-                    <button onclick="butterDad.close()" autofocus class="btn">Add To Cart</button>
-                    <button onclick="butterDad.close()" autofocus class="btn btn-transparent">Close</button>
+        <div class="butter-dad dialog">
+            <div class="base">
+                <div class="inner dialog__container">
+                    <img src="assets/img/store/gnarly/butter-dad.png" alt="">
+                    <div class="dialog__details">
+                        <h1>BUTTER DAD</h1>
+                        <p>₱ 800</p>
+                        <button class="btn" data-ldcv-set="">Add To Cart</button>
+                        <button class="btn btn-transparent" data-ldcv-set="">Close</button>
+                    </div>
                 </div>
             </div>
-        </dialog>
+        </div>
 
-        <dialog id="diceMono" class="dialog">
-            <div class="dialog__container">
-                <img src="assets/img/store/und/dice-mono.png" alt="">
-                <div class="dialog__details">
-                    <h1>DIME MONO MESH SHORTS</h1>
-                    <p>₱ 900</p>
-                    <label for="size">size:</label>
-                    <select name="size">
-                        <option value="small">SMALL</option>
-                        <option value="medium">MEDIUM</option>
-                        <option value="large">LARGE</option>
-                        <option value="x-large">X-LARGE</option>
-                        <option value="xx-large">XX-LARGE</option>
-                    </select>
-                    <button onclick="diceMono.close()" autofocus class="btn">Add To Cart</button>
-                    <button onclick="diceMono.close()" autofocus class="btn btn-transparent">Close</button>
+        <div class="dice-mono dialog">
+            <div class="base">
+                <div class="inner dialog__container">
+                    <img src="assets/img/store/und/dice-mono.png" alt="">
+                    <div class="dialog__details">
+                        <h1>DIME MONO MESH SHORTS</h1>
+                        <p>₱ 900</p>
+                        <label for="size">size:</label>
+                        <select name="size">
+                            <option value="small">SMALL</option>
+                            <option value="medium">MEDIUM</option>
+                            <option value="large">LARGE</option>
+                            <option value="x-large">X-LARGE</option>
+                            <option value="xx-large">XX-LARGE</option>
+                        </select>
+                        <button class="btn" data-ldcv-set="">Add To Cart</button>
+                        <button class="btn btn-transparent" data-ldcv-set="">Close</button>
+                    </div>
                 </div>
             </div>
-        </dialog>
+        </div>
 
-        <dialog id="studioTee" class="dialog">
-            <div class="dialog__container">
-                <img src="assets/img/store/dbtk/studio-tee.png" alt="Studio tee">
-                <div class="dialog__details">
-                    <h1>STUDIO TEE - BLACK</h1>
-                    <p>₱ 1,100</p>
-                    <label for="size">size:</label>
-                    <select name="size">
-                        <option value="small">SMALL</option>
-                        <option value="medium">MEDIUM</option>
-                        <option value="large">LARGE</option>
-                        <option value="x-large">X-LARGE</option>
-                        <option value="xx-large">XX-LARGE</option>
-                    </select>
-                    <button onclick="studioTee.close()" autofocus class="btn">Add To Cart</button>
-                    <button onclick="studioTee.close()" autofocus class="btn btn-transparent">Close</button>
+        <div class="studio-tee dialog">
+            <div class="base">
+                <div class="inner dialog__container">
+                    <img src="assets/img/store/dbtk/studio-tee.png" alt="Studio tee">
+                    <div class="dialog__details">
+                        <h1>STUDIO TEE - BLACK</h1>
+                        <p>₱ 1,100</p>
+                        <label for="size">size:</label>
+                        <select name="size">
+                            <option value="small">SMALL</option>
+                            <option value="medium">MEDIUM</option>
+                            <option value="large">LARGE</option>
+                            <option value="x-large">X-LARGE</option>
+                            <option value="xx-large">XX-LARGE</option>
+                        </select>
+                        <button class="btn" data-ldcv-set="">Add To Cart</button>
+                        <button class="btn btn-transparent" data-ldcv-set="">Close</button>
+                    </div>
                 </div>
             </div>
-        </dialog>
+        </div>
 
-        <dialog id="slantAstrology" class="dialog">
-            <div class="dialog__container">
-                <img src="assets/img/store/dbtk/slantastro.png" alt="Slant Astro Tee">
-                <div class="dialog__details">
-                    <h1>SLANT ASTROLOGY TEE - BLACK</h1>
-                    <p>₱ 1,100</p>
-                    <label for="size">size:</label>
-                    <select name="size">
-                        <option value="small">SMALL</option>
-                        <option value="medium">MEDIUM</option>
-                        <option value="large">LARGE</option>
-                        <option value="x-large">X-LARGE</option>
-                        <option value="xx-large">XX-LARGE</option>
-                    </select>
-                    <button autofocus onclick="slantAstrology.close()" class="btn add-to-cart">Add To Cart</button>
-                    <button onclick="slantAstrology.close()" autofocus class="btn btn-transparent">Close</button>
+        <div class="slant-astrology dialog">
+            <div class="base">
+                <div class="inner dialog__container">
+                    <img src="assets/img/store/dbtk/slantastro.png" alt="Slant Astro Tee">
+                    <div class="dialog__details">
+                        <h1>SLANT ASTROLOGY TEE - BLACK</h1>
+                        <p>₱ 1,100</p>
+                        <label for="size">size:</label>
+                        <select name="size">
+                            <option value="small">SMALL</option>
+                            <option value="medium">MEDIUM</option>
+                            <option value="large">LARGE</option>
+                            <option value="x-large">X-LARGE</option>
+                            <option value="xx-large">XX-LARGE</option>
+                        </select>
+                        <button class="btn" data-ldcv-set="">Add To Cart</button>
+                        <button class="btn btn-transparent" data-ldcv-set="">Close</button>
+                    </div>
                 </div>
             </div>
-        </dialog>
+        </div>
         <!-- item dialog end -->
-
-        <!-- cart start -->
-        <dialog class="cart" id="cart">
-            <div class="cart__container">
-                <div class="cart__header">
-                    <h1>Your Cart</h1>
-                    <i onclick="cart.close()" class="fa-solid fa-x"></i>
-                </div>
-                <img src="assets/img/store/gnarly/butter-dad.png">
-                    <p class="item">GNARLY BUTTER DAD</p>
-                        <select class="number">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select><br>
-                            <input class="check" type="checkbox">
-                    <p class="price">₱ 800.00</p>
-                            <br><hr>
-                <img src="assets/img/brands/dbtk/SLANTASTROLOGY.png">
-                    <p class="item">SLANT ASTROLOGY</p>
-                        <select class="number">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select><br>
-                            <input class="check" type="checkbox">
-                    <p class="price">₱ 650.00</p>
-                                <br><hr>
-                <img src="assets/img/store/und/dice-mono.png">
-                    <p class="item">DIME MONO MESH</p>
-                        <select class="number">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select><br>
-                            <input class="check" type="checkbox">
-                    <p class="price">₱ 900.00</p>
-                                <br><hr>
-                <img src="assets/img/store/dbtk/studio-tee.png">
-                    <p class="item">DBTK STUDIO TEE</p>
-                        <select class="number">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select><br>
-                            <input class="check" type="checkbox">
-                    <p class="price">₱ 1,100.00</p>
-                                <br><hr>
-                    <p class="sub">Subtotal:</p>
-                    <p class="total">₱ 3,450.00</p>
-                    <a href="checkout.html">
-                        <button class="btn">Checkout</button>
-                    </a>
-            </div>
-        </dialog>
-        <!-- cart ends -->
     </main>
 
     <footer>
@@ -325,5 +257,8 @@
             duration: 1100
         });
     </script>
+
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

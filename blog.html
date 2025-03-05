@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <nav class="nav">
@@ -39,31 +40,12 @@
                     <button class="btn">Shop Now</button>
                 </a>
                 <div class="menu">
-                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
 
-        <dialog class="nav__mobile" id="navMobile">
-            <div class="nav__container">
-                <a href="index.html" class="nav__brand">
-                    <img src="assets/img/brand-logo.png" alt="">
-                    <h1>Rediscovered Fits</h1>
-                </a>
-
-                <div class="nav__cta">
-                    <div class="nav__user">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <a href="store.html">
-                        <button class="btn">Shop Now</button>
-                    </a>
-                    <div class="menu">
-                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
-                    </div>
-                </div>
-            </div>
-
+        <div class="nav__mobile" id="navMobile">
             <div class="nav__links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -74,7 +56,7 @@
                     <li><a href="faqs.html">Faq's</a></li>
                 </ul>
             </div>
-        </dialog>
+        </div>
     </nav>
 
     <main>
@@ -86,7 +68,7 @@
                 <div class="blog__card">
                     <img src="assets/img/blogs/thumb/hghmndsxmedisina.webp" alt="Blog thumb 1">
                     <div class="blog__info">
-                        <p>AUGUST 19, 2023</p>
+                        <p>August 19, 2023</p>
                         <p>HGHMNDS</p>
                     </div>
                     <h2>HGHMNDSxMEDISINA</h2>
@@ -112,11 +94,21 @@
                     <h2>ON A MISSION TO PROMOTE FILIPINO CULTURE</h2>
                     <p>The brand's name is derived from the Filipino alphabet “Abakada” which consists of 20 letters....</p>
                 </div>
+
+                <div class="blog__card">
+                    <img src="assets/img/blogs/thumb/pace-yourselves-kids.webp" alt="Blog thumb 1">
+                    <div class="blog__info">
+                        <p>July 21, 2022</p>
+                        <p>DBTK</p>
+                    </div>
+                    <h2>PACE YOURSELVES, KIDS!</h2>
+                    <p>There are times when we feel pressured to create progress, especially when we see others achieving their goals...</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="blogs-footer">
+    <footer class="footer">
         <h1>REDISCOVERED FITS</h1>
 
         <ul>
@@ -125,7 +117,7 @@
             <li><a href="categories.html">Categories</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="blog.html" class="nav__active">Blog</a></li>
-            <li><a href="#">Faq's</a></li>
+            <li><a href="faqs.html">Faq's</a></li>
         </ul>
 
         <p class="copyright">REDISCOVERED FITS. Copyright © 2024 - All Rights Reserve || <a href="team.html">Meet our team</a></p>
@@ -138,5 +130,7 @@
             duration: 1100
         });
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

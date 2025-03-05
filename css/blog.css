@@ -34,9 +34,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-.blogs-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}

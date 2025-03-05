@@ -24,11 +24,11 @@
                 <h1>Rediscovered Fits</h1>
             </a>
             <ul>
-                <li><a href="index.html" class="nav__active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="nav__active">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
             </ul>
 
@@ -40,31 +40,12 @@
                     <button class="btn">Shop Now</button>
                 </a>
                 <div class="menu">
-                    <i class="fa-solid fa-bars" onclick="navMobile.show()"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
 
-        <dialog class="nav__mobile" id="navMobile">
-            <div class="nav__container">
-                <a href="index.html" class="nav__brand">
-                    <img src="assets/img/brand-logo.png" alt="">
-                    <h1>Rediscovered Fits</h1>
-                </a>
-
-                <div class="nav__cta">
-                    <div class="nav__user">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <a href="store.html">
-                        <button class="btn">Shop Now</button>
-                    </a>
-                    <div class="menu">
-                        <i class="fa-solid fa-x" onclick="navMobile.close()"></i>
-                    </div>
-                </div>
-            </div>
-
+        <div class="nav__mobile" id="navMobile">
             <div class="nav__links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -75,7 +56,7 @@
                     <li><a href="faqs.html">Faq's</a></li>
                 </ul>
             </div>
-        </dialog>
+        </div>
     </nav>
 
     <div class="hero">
@@ -244,5 +225,7 @@
             duration: 1100
         });
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
